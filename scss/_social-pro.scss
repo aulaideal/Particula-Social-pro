@@ -1,0 +1,723 @@
+/*Estilos  Partícula Social Pro*/
+.g-socialpro{
+    display: flex;
+    @include display(flex);
+    @include flex-wrap(wrap);
+}
+.g-socialpro a{    
+    margin-right: .2rem;
+    @include display(flex);
+    @include align-items(center);
+    }
+
+.g-socialpro a i{
+    @include display(flex);
+    padding: 0 0.4rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    text-shadow: none;
+    color: #3a3a3a;    
+}
+.g-socialpro-texto{
+    padding: 0 0.4rem 0 .1rem;
+    color: #3a3a3a; 
+    font-size: .9rem;
+    font-weight: bold;
+    @include transition(all 0.1s ease);
+}
+.g-socialpro.g-social-pro-vertical.g-socialpro-ambos .g-socialpro-texto{
+    padding-top: .2rem;
+}
+.g-socialpro.g-social-pro-vertical a{
+     @include flex-direction(column);
+}
+
+
+/*Diseno 1*/
+.g-socialpro.diseno1 a i{
+    @include transition(all 0.5s ease);
+}
+
+
+/*Diseno 2*/
+.g-socialpro.diseno2 a i{
+    @include transition(all 0.5s ease);
+}
+.g-socialpro.diseno2 a:hover i{
+@include transform(rotate(360deg));
+}
+
+/*Diseno 3*/
+.g-socialpro.diseno3 a i {
+    @include transition(all 0.5s ease);
+    
+}
+.g-socialpro.diseno3 a:hover i{
+    @include transform(rotateY(360deg));
+}
+
+
+/*Diseno 4*/
+
+.g-socialpro.diseno4{
+    a{
+    margin-right: 0.4rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 1px 1px 0px 1px rgba(45, 42, 42, 0.22);
+    @include transition(color 0.3s);
+    }
+
+    i span {
+    pointer-events: none;
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    top: -1px;
+    left: -1px;
+    padding: 2px;
+    z-index: -1;
+    background:#1e709c;
+    @include transition(transform 0.2s, opacity 0.2s);
+    @include transform(scale(0));
+    }
+
+
+    .g-socialpro-texto {
+    padding: 0 .4rem;
+     }
+
+    a:hover span{
+        @include transform(scale(1));
+        @include transition(transform 0.4s, opacity 0.2s);
+        opacity: 1;
+    }
+
+   a:hover i {
+    color: #fff!important;
+    }
+}
+
+
+/*Diseno 5*/
+ .g-socialpro.diseno5{
+    a{
+    margin-right: 0.6rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: $accent-color-1;
+    box-shadow: 1px 1px 0px 0px rgba(45, 42, 42, 0.22);
+    @include transition(all 0.2s ease-in-out);
+
+    }
+    .g-socialpro-texto {
+    padding: 0 .4rem;
+     }
+
+    a:hover i {
+      @include transform(scale(1.15));
+    }
+}
+
+ /*Diseno 6*/
+ .g-socialpro.diseno6{
+    a{
+    margin-right: 0.6rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: $accent-color-1;
+    box-shadow: none;
+    @include transition(all 0.4s ease-in-out);
+    }
+    .g-socialpro-texto {
+    padding: 0 .4rem;
+     }
+
+    a:hover i {
+     @include transform(scale(1.2) rotate(360deg));
+    }
+}
+ /*Diseno 7*/
+ .g-socialpro.diseno7{
+    a{
+    margin-right: 0.6rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #5a5e61;
+    box-shadow: none;
+    @include transition(all 0.4s ease-in-out);
+    }
+    .g-socialpro-texto {
+    padding: 0 .4rem;
+     }
+     a i:before{
+    @include transition(all 0.4s ease-in-out);
+    }
+
+    a:hover i:before {
+     transform:rotate(360deg);
+     @include transform(rotate(360deg));
+    }
+}        
+
+   
+/*Diseno 8*/
+.g-socialpro.diseno8 a i {    
+    @include transition(all 0.3s ease);
+    position: relative;
+    top: 0;
+}
+.g-socialpro.diseno8 a:hover i{
+    top: -.4rem;
+}
+
+/*Diseno 9*/
+.g-socialpro.diseno9{
+  font-size: 0;
+
+    a{
+      @include display(inline-flex);
+      @include align-items(center);
+      @include justify-content(center);
+    }
+     a .g-socialpro-diseno9-hover {
+      display:block;
+      width: 140%;
+      height: 140%;
+      position: absolute;
+      @include transform( rotate(45deg);
+    }
+
+    a,
+    a .g-socialpro-diseno9-hover,
+    a .fa {
+    @include transition(all 0.35s);
+    @include transition-timing-function(cubic-bezier(0.31, -0.105, 0.43, 2.00));
+    }
+
+    a .g-socialpro-diseno9-con{
+    @include display(inline-flex);
+    @include align-items(center);
+    @include justify-content(center);
+    background-color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+}
+
+    a .g-socialpro-diseno9-hover{
+      top: 90%;
+      left: -110%;
+    }
+
+    a .fa {
+      transform: scale(0.8);
+    }
+
+
+    a:focus .g-socialpro-diseno9-hover,
+    a:hover .g-socialpro-diseno9-hover{
+      top: -20%;
+      left: -20%;
+    }
+    a:focus .fa,
+    a:hover .fa {
+      color: #fff !important;
+      @include transform(scale(1));
+    }
+}
+
+/*Diseno 10*/
+ .g-socialpro.diseno10{
+    a{
+    margin-right: 0.6rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius:0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    box-shadow: none;
+    @include transition(all 0.4s ease-in-out);
+    }
+    .g-socialpro-texto {
+    padding: 0 .4rem;
+     }
+
+    a:hover i{
+    @include transform(rotate(360deg));
+    border-radius: 50%;
+    }
+}   
+
+ /*Diseno 11*/
+ .g-socialpro.diseno11{
+    a{
+    margin-right: 0.4rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    background: #5a5e61;
+    color: #fff;
+    box-shadow: 0px 4px 0px #444;
+    @include transform(translate(0, 0));
+    @include transition(all 0.1s ease);
+    }
+
+    &.g-socialpro-ambos a i{
+        width: auto;
+        height: 2.5rem;
+    }
+
+    a i:before{
+      @include transition(all 0.2s ease);
+    }
+
+    a:hover i{
+    box-shadow: 0px -1px 0px rgba(13, 23, 27, 0.41) inset !important;
+    top: 3px;
+    @include transform(scaleY(.9));
+    }
+    a:hover i:before{
+    @include transform(scaleY(1.1));
+    }
+    a:hover .g-socialpro-texto{
+    @include transform(scaleY(1.1));
+    }   
+
+    .g-socialpro-texto{
+    padding: 0 .5rem;
+    color: #fff;
+    font-family: get-font-family($base-body-font);
+    }
+
+}  
+
+ /*Diseno 12*/
+ .g-socialpro.diseno12{
+   
+    .g-socialpro-di12 {
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(center);
+        text-align: center;
+        z-index: 0;
+        margin: 0 -.6rem;
+        background: #55acee;
+        border-color: #55acee;
+        color: #f8f8f9;
+        position: relative;
+        transform: scale(.6);
+
+            a {
+                margin: 0 -.35rem;
+                @include display(flex);
+                @include align-items(center);
+            }
+        }
+
+    .g-socialpro-di12,
+    .g-socialpro12-pre,
+    .g-socialpro12-post{
+    height: 37px;
+    width: 64px;
+    box-sizing: border-box;
+    background: #5a5e61;
+    color: #ffffff;
+    @include transition(all 0.2s ease);
+    }
+
+    .g-socialpro12-pre,
+    .g-socialpro12-post {
+        position: absolute;
+        left: -1px;
+        top: 0;
+        z-index: -1;
+    }
+
+    .g-socialpro12-pre{
+        @include transform(rotate(60deg));
+    }
+    .g-socialpro12-post {
+        @include transform(rotate(-60deg));
+    }
+   
+    .g-socialpro-di12{
+         i {
+            color: #fff;
+            z-index: 9;
+            font-size: 37px;
+            text-align: center;
+            @include transition(transform .25s ease);
+        }
+         &:hover,
+         &:hover .g-socialpro12-pre,
+         &:hover .g-socialpro12-post{
+            color: #fff;
+            border-left: 1px solid #fff !important;
+            border-right: 1px solid #fff !important;
+        }
+
+        &:hover i {
+          @include transform(rotate(360deg));
+        }
+    }
+}
+
+ /*Diseno 13*/
+ .g-socialpro.diseno13{
+    a{
+    margin-right: 0.6rem;   
+        i{
+        @include align-items(center);
+        @include justify-content(center);
+        font-size: 1.2rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius:0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        color: $accent-color-1;
+        box-shadow: none;
+        @include transition(all 0.4s ease-in-out);
+        }
+
+        &:hover i{
+         box-shadow: 0 0 0 #fff inset !important;
+         color: #fff !important;
+         background: #524f4f;
+        }
+
+        .g-socialpro-texto {
+            padding: 0 .4rem;
+         }
+    }
+}
+
+
+/*Diseno 14*/
+ .g-socialpro.diseno14{
+    a{
+    margin-right: 0.6rem;  
+
+        i{
+        @include align-items(center);
+        @include justify-content(center);
+        font-size: 1.2rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        color: $accent-color-1;
+        box-shadow: none;
+        @include transition(all 0.4s ease-in-out);
+        }
+
+        &:hover i{
+            @include transform(rotateY(-180deg));  
+        }
+
+        .g-socialpro-texto {
+            padding: 0 .4rem;
+         }
+    }
+} 
+
+
+ /*Diseno 15*/
+ .g-socialpro.diseno15{
+    a{
+    margin-right: 0.6rem;
+    }
+    a i{
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0 .25rem;
+    border-radius: 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #5a5e61;
+    color: #ffffff;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    @include transform(rotate(45deg) scale(.9));
+    @include transition(all 0.3s ease);
+    }
+    .g-socialpro-texto {
+            padding: 0 .4rem;
+    }
+    a i:before{
+    @include transform(rotate(-45deg));
+    }
+
+    a:hover i {
+      @include transform(rotate(45deg) scale(1));
+      }
+  }
+   
+ /*Diseno 16*/
+ .g-socialpro.diseno16{
+    a{
+    margin-right: 0.6rem;
+     @include perspective(700);
+    }
+     .g-socialpro-texto {
+            padding: 0 .4rem;
+    }
+    a .social-btn-cube{
+    width: 2.5rem;    
+    height: 2.5rem;
+    position: relative;
+    @include transform-style(preserve-3d);
+    @include transition(transform 0.4s ease);
+    @include transform-origin(20px 20px -20px);
+
+    }
+    a .social-btn-cube .social-btn-face {
+    width: 105%;    
+    height: 100%;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    position: absolute;
+    background: #dd4b39;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    @include transform-origin(0);
+    }
+
+    a .social-btn-cube .social-btn-face.default {
+    @include transform(rotateY(0deg));
+    }
+
+    a .social-btn-cube .social-btn-face.active {
+    box-shadow: 5rem 5rem 0 rgba(0, 0, 0, 0.1) inset;
+    left: 40px;
+    @include transform(rotateY(90deg));
+    }
+
+
+    a:hover .social-btn-cube {
+    @include transform(rotateY(-90deg));
+     }
+
+
+  }
+
+ /*Diseno 17*/
+ .g-socialpro.diseno17{
+    a{
+    margin-right: 0.6rem;
+    }
+    .g-socialpro-texto {
+            padding: 0 .4rem;
+    }
+
+    .c--anim-btn,
+    .c-anim-btn {
+      transition: 0.3s;     
+    }
+    .c--anim-btn {
+      height: 2.5rem;
+      width: 2.5rem;
+      overflow: hidden;
+      
+      background-color: #3b5998;
+    }
+    .c--anim-btn i{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+     height: 2.5rem;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 1.2rem;
+    }
+
+    .c-anim-btn{
+      margin-top: 0em;   
+    }
+    .c-anim-btn-2:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.09);
+        bottom: 0;
+    }
+
+    a:hover .c--anim-btn .c-anim-btn{
+          margin-top: -2.5rem;
+    }
+}
+
+ /*Diseno 18*/
+ .g-socialpro.diseno18{     
+    a{
+    margin-right: 0.6rem;
+    position: relative;    
+    @include justify-content(center);
+
+        i{
+        @include align-items(center);
+        @include justify-content(center);
+        font-size: 1.2rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        background: #5a5e61;
+        color: #fff;
+        box-shadow: none;
+        @include transition(all 0.4s ease-in-out);
+        }
+
+        .tooltip {
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(center);
+        background: #5a5e61;
+        max-width: 400px;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        padding: .3rem .6rem;
+        z-index: -1;
+        font-size: 1rem;
+        border-radius: 2px;
+        visibility: hidden;
+        opacity: 0;
+        font-size: .9rem;
+        @include transition(all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55));
+        }
+        .tooltip span{
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #5a5e61;
+        position: absolute;
+        bottom: -5px;
+        }
+        &:hover i{
+            color: rgba(255, 255, 255, 0.71);
+        }
+
+        &:hover .tooltip{
+        bottom: 45px;
+        visibility: visible;
+        opacity: 1;
+        z-index: 99999;
+        text-align: center;
+        text-shadow: none;
+        box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.18) inset;
+        }
+        
+        .g-socialpro-texto {
+        padding: 0 .4rem;
+        }
+    }
+    &.g-social-pro-vertical.g-socialpro-ambos a:hover .tooltip {
+        bottom: 65px;
+    }
+
+}
+
+
+
+/*-------------------------------------------
+MEDIAS QUERIES
+------------------------------------------*/
+@media all and (max-width: $breakpoints-large-mobile-container) {
+    .g-socialpro {
+    @include justify-content(center);
+    }
+    .g-socialpro .g-socialpro-texto {
+       display: none;
+    }
+    .g-socialpro.diseno11.g-socialpro-ambos a i {
+        width: 2.5rem;
+    }
+
+}
+
+

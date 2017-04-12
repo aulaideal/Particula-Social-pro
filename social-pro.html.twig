@@ -1,0 +1,204 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    {% if particle.title %}<h2 class="g-title">{{ particle.title|raw }}</h2>{% endif %}
+    <div class="g-socialpro {{ particle.css.class }}{% if particle.diseno %} {{ particle.diseno|e }}{% endif %}{% if particle.textodebajo %} g-social-pro-vertical{% endif %}{% if particle.display=='ambos' %} g-socialpro-ambos{% endif %}">
+        {% for item in particle.items %}
+            <a target="{{ particle.target|default('_blank')|e }}" href="{{ item.link|e }}" title="{{ item.text|e }}" aria-label="{{ item.text|e }}"
+            {%- if particle.espacioiconos -%} style="margin-right:{{ particle.espacioiconos }};"{%- endif -%}>
+                
+                
+
+			{% if particle.diseno=='diseno1' or particle.diseno=='diseno2' or particle.diseno=='diseno3'  or particle.diseno=='diseno8' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="color:{{ item.coloricono }};"{% endif -%}>
+                	</i>                	
+				{% endif %}
+
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+
+            {% endif %}
+
+
+
+
+
+			{% if particle.diseno=='diseno4' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="color:{{ item.coloricono }};"{% endif -%}>
+                	<span {% if item.coloricono %} style="background:{{ item.coloricono }};"{% endif %}></span> </i>                	
+				{% endif %}
+
+				{% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+
+
+
+
+            {% if particle.diseno=='diseno5' or  particle.diseno=='diseno6' or particle.diseno=='diseno7' or particle.diseno=='diseno15' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}>
+                	</i>                	
+				{% endif %}
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+
+			
+			{% if particle.diseno=='diseno9'  %}
+				
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}  
+				<div class="g-socialpro-diseno9-con">
+					<span class="g-socialpro-diseno9-hover" {%- if item.coloricono -%} style="background:{{ item.coloricono }};"{% endif -%}></span>
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="color:{{ item.coloricono }};"{% endif -%}>
+                	</i> 
+                </div>               	
+				{% endif %}
+
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+
+            {% endif %}
+
+
+
+            {% if  particle.diseno=='diseno10' or particle.diseno=='diseno14' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="color:{{ item.coloricono }};"{% endif -%}>
+                	</i>                	
+				{% endif %}
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+
+
+            {% if particle.diseno=='diseno11'  %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="background:{{ item.coloricono }}; box-shadow:0px -0.2rem 0px rgba(0, 0, 0, 0.24) inset; "{%- endif -%}>  
+                {% endif %}          	
+			         
+                {% if particle.display=='ambos' %}                
+	                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+	            {% endif %}
+
+                	</i>                	
+			{% endif %}
+
+			{% if particle.diseno=='diseno12' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+					<div class="g-socialpro-di12"{%- if item.coloricono -%} style="background:{{ item.coloricono }};border-left: 1px solid {{ item.coloricono }}; border-right: 1px solid {{ item.coloricono }};"{%- endif -%}>
+						<span class="g-socialpro12-pre"{%- if item.coloricono -%} style="background:{{ item.coloricono }}; border-left: 1px solid {{ item.coloricono }}; border-right: 1px solid {{ item.coloricono }};"{%- endif -%}></span>
+							<i class="{{ item.icon|e }}"></i>
+						<span class="g-socialpro12-post"{%- if item.coloricono -%} style="background:{{ item.coloricono }}; border-left: 1px solid {{ item.coloricono }}; border-right: 1px solid {{ item.coloricono }};"{%- endif -%}></span>
+					</div>
+	            {% endif %} 
+
+ 				{% if particle.display=='ambos' %}                
+	                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+	            {% endif %} 
+                
+            {% endif %}
+
+             {% if particle.diseno=='diseno13' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="color:{{ item.coloricono }}; background:{{ item.coloricono }};  box-shadow:0 -5rem 0 #fff inset;"{% endif -%}>
+                	</i>                	
+				{% endif %}
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+
+            {% if particle.diseno=='diseno16' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<div class="social-btn-cube">
+	                	<i class="social-btn-face {{ item.icon|e }} default"
+	                	{%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}>
+	                	</i> 
+
+	                	<i class="social-btn-face {{ item.icon|e }} active"
+	                	{%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}>
+	                	</i>
+                	</div>
+
+				{% endif %}
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+             {% if particle.diseno=='diseno17' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+				<span class="c--anim-btn">
+				  <i class="c-anim-btn {{ item.icon|e }}" {%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}></i> 
+				  <i class="c-anim-btn-2 {{ item.icon|e }}" {%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}></i> 
+				</span>
+				{% endif %}
+
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+
+            {% if particle.diseno=='diseno18' %} 
+                
+                {% if particle.display=='solo_ico' or particle.display=='ambos'  %}                	
+                	<i class="{{ item.icon|e }}"
+                	{%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}>
+                	</i>
+                	<div class="tooltip" {%- if item.coloricono -%} style="background:{{ item.coloricono }}; "{% endif -%}>
+                	<span {% if item.coloricono -%}style="color:{{ item.coloricono }}; border-top: 5px solid {{ item.coloricono }};"{% endif -%}> </span>
+
+                	{{ item.text|e }}
+                	</div>                	
+				{% endif %}
+				 {% if particle.display=='ambos' %}                
+                <span class="g-socialpro-texto" {%- if particle.colortexto -%} style="color:{{ particle.colortexto }};"{%- endif -%}>{{ item.text|e }}</span>
+                {% endif %}
+                
+            {% endif %}
+
+           
+
+
+				
+               
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}
