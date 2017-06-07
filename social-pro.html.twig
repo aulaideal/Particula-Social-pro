@@ -1,8 +1,11 @@
 {% extends '@nucleus/partials/particle.html.twig' %}
 
 {% block particle %}
-    {% if particle.title %}<h2 class="g-title">{{ particle.title|raw }}</h2>{% endif %}
-    <div class="g-socialpro {{ particle.css.class }}{% if particle.diseno %} {{ particle.diseno|e }}{% endif %}{% if particle.textodebajo %} g-social-pro-vertical{% endif %}{% if particle.display=='ambos' %} g-socialpro-ambos{% endif %}">
+    {% if particle.tituloprincipal %}
+        <{{ particle.etiquetatitulo }} class="g-cualidades-titulo">{{ particle.tituloprincipal|raw }}</{{ particle.etiquetatitulo }}>
+    {% endif %}
+
+    <div class="g-socialpro {{ particle.css.class }}{% if particle.diseno %} {{ particle.diseno|e }}{% endif %}{% if particle.textodebajo %} g-social-pro-vertical{% endif %}{% if particle.display=='ambos' %} g-socialpro-ambos{% endif %} {{ particle.orientacionitems|e }}">
         {% for item in particle.items %}
             <a target="{{ particle.target|default('_blank')|e }}" href="{{ item.link|e }}" title="{{ item.text|e }}" aria-label="{{ item.text|e }}"
             {%- if particle.espacioiconos -%} style="margin-right:{{ particle.espacioiconos }};"{%- endif -%}>

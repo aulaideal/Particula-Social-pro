@@ -21,15 +21,40 @@ form:
       description: Nombre de las clases CSS para la partícula.
       default: social
 
-    title:
+    tituloprincipal:
       type: input.text
-      label: Título
-      description: Ingrese un título.
-      placeholder: Ingrese un título
+      label: Título General
+      description: Escribe el título general de la partícula
+      placeholder: 'Ingrese el título'
+
+    etiquetatitulo:
+      type: select.select
+      label: Etiqueta del título
+      description: Defina Etiqueta del título general.
+      placeholder: 'Seleccionar'
+      default: h2  
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+    
+    orientacionitems:
+      type: input.radios
+      label: Orientación Items
+      description: ¿Cómo deseas mostrar los items?
+      default: g-social-dis-horizontal
+      options:
+        g-social-dis-horizontal: Horizontal
+        g-social-dis-vertical: Vertical
+
 
     target:
       type: select.select
       label: Ventana de destino
+      class: erick
       description: Ventana de destino cuando el enlace es presionado. 
       placeholder: 'Seleccionar...'
       default: _blank
@@ -48,8 +73,8 @@ form:
 
     espacioiconos:
       type: input.text
-      label: Espacio entre Iconos
-      description: 'Define el espaciado entre  los Iconos'
+      label: Espacio entre Items
+      description: 'Define el espaciado entre  items'
       placeholder: '.5rem'
 
     colortexto:
