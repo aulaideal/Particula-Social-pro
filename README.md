@@ -1,7 +1,7 @@
 # Partícula "Social-pro"
 Partícula para Gantry 5 que te permite incluir un ícono de Font Awesome para tus botones a redes sociales. Cuenta con mas de 18 diseños y una variedad de efectos.
 
-![sociales](https://user-images.githubusercontent.com/9434043/26900193-08f6edf6-4b97-11e7-837f-e891a58cdb76.png)
+![sociales](https://user-images.githubusercontent.com/9434043/26900423-beacfc44-4b97-11e7-9f9c-4fa780818421.png)
 
 Instalación
 -----------
