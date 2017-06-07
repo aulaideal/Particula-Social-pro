@@ -1,5 +1,7 @@
-# Partícula "Items-contactos"
-Partícula para Gantry 5 que te permite incluir un ícono de Font Awesome acompañado de un texto (pudiendo ser el texto ser también un enlace), muy util para secciones donde necesitemos insertar teléfonos,emails,direccións, etc.
+# Partícula "Social-pro"
+Partícula para Gantry 5 que te permite incluir un ícono de Font Awesome para tus botones a redes sociales. Cuenta con mas de 18 diseños y una variedad de efectos.
+
+![sociales](https://user-images.githubusercontent.com/9434043/26900193-08f6edf6-4b97-11e7-837f-e891a58cdb76.png)
 
 Instalación
 -----------
@@ -7,11 +9,12 @@ No hemos incluido un instalador ya que deseamos que esta partícula pueda ser us
 El modo de instalación es muy sencillo:
 
 + Crear la carpeta "particles" dentro de tu carpeta "custom" en tu plantilla Gantry. Ejem: g5_hydrogen/custom/particles
-+ Cópie los archivos imagen.html.twig y imagen.yaml
-+ Cópie el archivo _contact-items.scss dentro de tu carpeta "scss". Ejem: g5_hydrogen/custom/scss
-+ Llame al archivo desde tu custom.scss colocando la siguiente linea al comienzo: 
-  /*Estilos partícula Contact Items */
-  @import "contact-items";
++ Cópie los archivos social-pro.html.twig y social-pro.yaml
++ Cópie el archivo _social-pro.scss dentro de tu carpeta "scss". Ejem: g5_hydrogen/custom/scss/_social-pro.scss
++ Llame al archivo desde tu custom.scss colocando la siguiente linea al comienzo:
+
+  /*Estilos partícula Social-pro */
+  @import "social-pro";
 
 
 Modo de uso
